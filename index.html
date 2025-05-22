@@ -4,39 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Gaming Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Toggle Button -->
+  <div class="theme-toggle">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>
+
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="main.html">Services</a>
-    <a href="#discord">Discord</a>
-    <a href="#socials">Socials</a>
-    <a href="#news">News</a>
+    <a href="giveaway.html">Giveaway(soon)</a>
   </nav>
 
-  <section>
-    <h1 class="glow">🎮 Welcome to My Gaming Profile</h1>
-    <p>Explore my servers, socials, services, and updates below!</p>
-  </section>
-
+  <!-- Discord Section -->
   <section id="discord">
-    <h2>📢 My Discord Servers</h2>
-    <div class="card">Join my <a href="https://discord.gg/yourserver1">Gaming Hub</a></div>
-    <div class="card">Join <a href="https://discord.gg/yourserver2">Dev Corner</a></div>
+    <h2 class="glow">🎮 Discord Servers</h2>
+    <ul>
+      <li><a href="https://discord.gg/QYGdNzCa7x" target="_blank"><b><u>All In 1 Store</b></u> | Free Nitro & McFa</a></li>
+      <li><a href="https://discord.gg/YZnrRNhrsa" target="_blank"><b><u>BGST</u></b> | BMGO SB Traders</a></li>
+       <li><a href="https://discord.gg/n2FPR5M5" target="_blank"><b><u>FlameForge</u></b> | Mc YT Home</a></li>
+      <li><a href="https://discord.gg/Z7cB32K7r3" target="_blank"><b><u>Blaze MC</u></b> | McBe Realm</a></li>
+    </ul>
   </section>
 
+  <!-- Socials Section -->
   <section id="socials">
-    <h2>🌐 Social Links</h2>
-    <div class="card"><a href="https://twitter.com/yourhandle">Twitter/X</a></div>
-    <div class="card"><a href="https://youtube.com/yourchannel">YouTube</a></div>
+    <h2 class="glow">🌐 Socials</h2>
+    <ul>
+      <li><a href="https://www.tiktok.com/@xsonite">TikTok</a></li>
+      <li><a href="https://www.youtube.com/@xSonite">YouTube</a></li>
+    </ul>
   </section>
 
+  <!-- News Section -->
   <section id="news">
-    <h2>📰 News & Updates</h2>
+    <h2 class="glow">📰 News & Updates</h2>
     <div class="card">🚧 New services launching soon!</div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- Script for theme toggle -->
+  <script>
+    const toggleBtn = document.getElementById('toggleTheme');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+    });
+  </script>
+
 </body>
 </html>
